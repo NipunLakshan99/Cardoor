@@ -1,0 +1,44 @@
+package com.vehicle;
+
+import java.sql.*;  
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.customer.DBConnect;  
+
+public class BookingDBUtil {
+
+	private static Connection con = null;
+	private static Statement stmt = null;
+	private static ResultSet ae = null;
+	
+	public static boolean booking (String getpickdate, String getreturndate, String getvehiclemodel, String getsubmodel) {
+		
+		boolean isSuccess = false;
+		
+		try {
+			
+			con = DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql = "insert into booking values(0,'"+getpickdate+"', '"+getreturndate+"','"+getvehiclemodel+"','"+getsubmodel+"')";
+			int ae = stmt.executeUpdate(sql);
+			
+			if(ae > 0) {
+				isSuccess = true;
+			}
+			else {
+				isSuccess = false;
+			}
+			
+			
+			}
+			catch(Exception e) {
+			e.printStackTrace();
+			}
+
+
+
+			return isSuccess;
+
+		}
+	}

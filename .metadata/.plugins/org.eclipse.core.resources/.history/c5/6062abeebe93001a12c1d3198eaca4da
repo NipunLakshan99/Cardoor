@@ -1,0 +1,138 @@
+package com.javaUtil.DB;
+
+import com.javaClass.Driver;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class DriverDao {
+	
+	 public DriverDao() {
+	    }
+
+	    public static Connection getConnection() {
+	        Connection con = null;
+
+	        try {
+	            Class.forName("com.mysql.jdbc.Driver");
+	            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/car", "root", "2226");
+	        } catch (Exception var2) {
+	            System.out.println(var2);
+	        }
+
+	        return con;
+	    }
+
+	    public static int save(Driver u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("insert into driver(name,user,password,email,phonenumber,ratings) values(?,?,?,?,?)");
+	            ps.setString(1, u.getName());
+	            ps.setString(2, u.getUser());
+	            ps.setString(3, u.getPassword());
+	            ps.setString(4, u.getEmail());
+	            ps.setString(5, u.getPhonenumber());
+	            ps.setString(6, u.getRatings());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static int update(Driver u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("update driver set name=?,user=?,password=?,email=?,phonenumber=?,ratings=? where id=?");
+	            ps.setString(1, u.getName());
+	            ps.setString(2, u.getUser());
+	            ps.setString(3, u.getPassword());
+	            ps.setString(4, u.getEmail());
+	            ps.setString(5, u.getPhonenumber());
+	            ps.setString(6, u.getRatings());
+	            ps.setInt(7, u.getId());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static int delete(Driver u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("delete from driver where id=?");
+	            ps.setInt(1, u.getId());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static List<Driver> getAllRecords() {
+	        ArrayList<Driver> list = new ArrayList<Driver>();
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from driver");
+	            ResultSet rs = ps.executeQuery();
+
+	            while(rs.next()) {
+	                Driver u = new Driver();
+	                u.setId(rs.getInt("id"));
+	                u.setName(rs.getString("name"));
+	                u.setUser(rs.getString("user"));
+	                u.setPassword(rs.getString("password"));
+	                u.setEmail(rs.getString("email"));
+	                u.setPhonenumber(rs.getString("phonenumber"));
+	                u.setRatings(rs.getString("ratings"));
+	                list.add(u);
+	            }
+	        } catch (Exception var5) {
+	            System.out.println(var5);
+	        }
+
+	        return list;
+	    }
+
+	    public static Driver getRecordById(int id) {
+	        Driver u = null;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from driver where id=?");
+	            ps.setInt(1, id);
+	            ResultSet rs = ps.executeQuery();
+
+	            while(rs.next()) {
+	                u = new Driver();
+	                u.setId(rs.getInt("id"));
+	                u.setName(rs.getString("name"));
+	                u.setUser(rs.getString("user"));
+	                u.setPassword(rs.getString("password"));
+	                u.setEmail(rs.getString("email"));
+	                u.setPhonenumber(rs.getString("phonenumber"));
+	                u.setRatings(rs.getString("ratings"));
+	            }
+	        } catch (Exception var5) {
+	            System.out.println(var5);
+	        }
+
+	        return u;
+	    }
+}
+

@@ -1,0 +1,98 @@
+package com.vehicle;
+
+import java.sql.*;  
+import java.util.ArrayList;  
+import java.util.List;  
+
+public class BookingDBUtil {
+
+	public static Connection getConnection(){  
+	    Connection con=null;  
+	    try{  
+	        Class.forName("com.mysql.jdbc.Driver");  
+	        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/car","","");  
+	    }catch(Exception e){System.out.println(e);}  
+	    return con;  
+	}  
+	public static int save(booking u){  
+	    int status=0;  
+	    try{  
+	        Connection con=getConnection();  
+	        PreparedStatement ps=con.prepareStatement(  
+	        "insert into booking(pickupdate,returndate,vehiclemodel,submodel) values(?,?,?,?)");  
+	        ps.setString(1,u.getPickupdate());  
+	        ps.setString(2,u.getReturndate());  
+	        ps.setString(3,u.getVehiclemodel());  
+	        ps.setString(4,u.getSubmodel());  
+	        status=ps.executeUpdate();  
+	    }catch(Exception e){System.out.println(e);}  
+	    return status;  
+	}  
+	public static int update(booking u){  
+	    int status=0;  
+	    try{  
+	        Connection con=getConnection();  
+	        PreparedStatement ps=con.prepareStatement(  
+	"update booking set pickupdate=?,returndate=?,vehiclemodel=?,submodel=?,colour=? where id=?");  
+	        ps.setString(1,u.getPickupdate());  
+	        ps.setString(2,u.getReturndate());  
+	        ps.setString(3,u.getVehiclemodel());  
+	        ps.setString(4,u.getSubmodel());  
+	        ps.setString(5,u.getColour());  
+	        ps.setInt(6,u.getId());  
+	        status=ps.executeUpdate();  
+	    }catch(Exception e){System.out.println(e);}  
+	    return status;  
+	}  
+	public static int delete(booking u){  
+	    int status=0;  
+	    try{  
+	        Connection con=getConnection();  
+	        PreparedStatement ps=con.prepareStatement("delete from booking where id=?");  
+	        ps.setInt(1,u.getId());  
+	        status=ps.executeUpdate();  
+	    }catch(Exception e){System.out.println(e);}  
+	  
+	    return status;  
+	}  
+	public static List<booking> getAllRecords(){  
+	    List<booking> list=new ArrayList<booking>();  
+	      
+	    try{  
+	        Connection con=getConnection();  
+	        PreparedStatement ps=con.prepareStatement("select * from booking");  
+	        ResultSet rs=ps.executeQuery();  
+	        while(rs.next()){  
+	            booking u=new booking();  
+	            u.setId(rs.getInt("id"));  
+	            u.setPickupdate(rs.getString("pickupdate"));  
+	            u.setReturndate(rs.getString("returndate"));  
+	            u.setVehiclemodel(rs.getString("vehiclemodel"));  
+	            u.setSubmodel(rs.getString("submodel"));  
+	            
+	            list.add(u);  
+	        }  
+	    }catch(Exception e){System.out.println(e);}  
+	    return list;  
+	}  
+	public static booking getRecordById(int id){  
+	    booking u=null;  
+	    try{  
+	        Connection con=getConnection();  
+	        PreparedStatement ps=con.prepareStatement("select * from booking where id=?");  
+	        ps.setInt(1,id);  
+	        ResultSet rs=ps.executeQuery();  
+	        while(rs.next()){  
+	            u=new booking();  
+	            u.setId(rs.getInt("id"));  
+	            u.setPickupdate(rs.getString("pickupdate"));  
+	            u.setReturndate(rs.getString("returndate"));  
+	            u.setVehiclemodel(rs.getString("vehiclemodel"));  
+	            u.setSubmodel(rs.getString("submodel"));  
+	            
+	        }  
+	    }catch(Exception e){System.out.println(e);}  
+	    return u;  
+	}  
+}  
+

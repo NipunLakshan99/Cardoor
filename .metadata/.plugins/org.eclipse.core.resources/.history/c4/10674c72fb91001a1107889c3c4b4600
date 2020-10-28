@@ -1,0 +1,44 @@
+package com.vehicle;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/bookingServlet")
+public class bookingServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+   
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setContentType("text/html;charset=UTF-8");
+		String getpickdate=request.getParameter("getPickupdate");
+		String getreturndate=request.getParameter("getReturndate");
+		String getvehiclemodel=request.getParameter("getVehiclemodel");
+		String getsubmodel=request.getParameter("getSubmodel");
+		
+		boolean isTrue;
+		
+		isTrue=BookingDBUtil.booking(getpickdate,getreturndate,getvehiclemodel,getsubmodel);
+		
+		if(isTrue == true) {
+			RequestDispatcher dis = request.getRequestDispatcher("bookingsave.jsp");
+		}
+		else {
+			RequestDispatcher dis2 = request.getRequestDispatcher("bookingerror.jsp");
+			dis2.forward(request, response);
+		}
+	}
+}
+		
+		
+		
+		

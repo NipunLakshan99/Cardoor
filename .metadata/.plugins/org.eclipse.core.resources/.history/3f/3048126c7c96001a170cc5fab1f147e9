@@ -1,0 +1,72 @@
+package Servelet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import com.*;
+import com.javaClass.Payment;
+import com.javaClass.PaymentDao;
+/**
+ * Servlet implementation class PaymentServelet
+ */
+@WebServlet("/PaymentServelet")
+public class PaymentServelet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private PaymentDao paymentDao;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+	
+	public void init() {
+		paymentDao = new PaymentDao();
+	}
+    public PaymentServelet() {
+    	
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
+        String cardNo = request.getParameter("cardNo");
+        String expDate = request.getParameter("expDate");
+        String ccv = request.getParameter("ccv");
+        String contact = request.getParameter("contact");
+
+        Payment payment = new Payment();
+        payment.setFirstName(firstName);
+        payment.setLastName(lastName);
+        payment.setCardNo(cardNo);
+        payment.setExpDate(expDate);
+        payment.setCcv(ccv);
+        payment.setContact(contact);
+        
+
+        try {
+            paymentDao.makePayment(payment);
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        response.sendRedirect("login.jsp");
+    }
+	}
+

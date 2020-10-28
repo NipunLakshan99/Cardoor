@@ -1,0 +1,129 @@
+package com.javaUtil.DB;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.DriverManager;
+
+
+import com.javaClass.SystmeU;
+
+
+public class StystemUDBUtil {
+	
+	private static Connection con = null;
+	private static Statement stmt = null;
+	private static ResultSet rs = null;
+
+	public static List<SystmeU> validate(String userName, String password) {
+		
+		ArrayList<SystmeU> sta = new ArrayList<>();
+		
+		try {
+			
+			con =DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql ="select * from staff where username='"+userName+"' and password='"+password+"'";
+			rs = stmt.executeQuery(sql);
+			
+			if(rs.next()) {
+				int id = rs.getInt(1);
+				String name = rs.getString(2);
+				String email = rs.getString(3);
+				String phone = rs.getString(4);
+				String userA = rs.getString(5);
+				String passW = rs.getString(6);
+				
+				SystmeU s = new SystmeU(id,name,email,phone,userA,passW);
+				sta.add(s);
+			}	
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return sta;
+	
+		
+	}
+	
+	public static boolean insertSystemU (String name,String email,String phone,String username,String password) {
+		
+		boolean isSuccess = false;
+		
+		try {
+			
+			con = DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql = "insert into staff values(0,'"+name+"', '"+email+"','"+phone+"','"+username+"','"+password+"')";
+			int rs = stmt.executeUpdate(sql);
+			
+			if(rs > 0) {
+				isSuccess = true;
+			}
+			else {
+				isSuccess = false;
+			}
+			
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+
+		
+		
+		
+		return isSuccess;
+	}
+	
+	public static int update(SystemU u) {
+        int status = 0;
+
+        try {
+        	con = DBConnect.getConnection();
+            PreparedStatement ps = con.prepareStatement("update booking set pickupdate=?,returndate=?,vehiclemodel=?,submodel=? where id=?");
+            ps.setString(1, u.getPickupdate());
+            ps.setString(2, u.getReturndate());
+            ps.setString(3, u.getVehiclemodel());
+            ps.setString(4, u.getSubmodel());
+            ps.setInt(5, u.getId());
+            status = ps.executeUpdate();
+        } catch (Exception var4) {
+            System.out.println(var4);
+        }
+
+        return status;
+    }
+	
+	public static List<SystmeU> getAllRecords() {
+        ArrayList<SystmeU> list = new ArrayList<SystmeU>();
+
+        try {
+        	con = DBConnect.getConnection();
+            PreparedStatement ps = con.prepareStatement("select * from staff");
+            ResultSet rs = ps.executeQuery();
+
+            while(rs.next()) {
+            	SystmeU u = new SystmeU(0, null, null, null, null, null);
+                u.setId(rs.getInt("id"));
+                u.setName(rs.getString("name"));
+                u.setEmail(rs.getString("email"));
+                u.setPhone(rs.getString("phone"));
+                u.setUserName(rs.getString("userName"));
+                u.setPassword(rs.getString("password"));
+                list.add(u);
+            }
+        } catch (Exception var5) {
+            System.out.println(var5);
+        }
+
+        return list;
+    }
+
+
+}

@@ -1,0 +1,12 @@
+<%@page import="com.vehicle.bookingServlet"%>  
+<jsp:useBean id="u" class="com.vehicle.booking"></jsp:useBean>  
+<jsp:setProperty property="*" name="u"/>  
+  
+<%  
+int i=bookingServlet.save(u);  
+if(i>0){  
+	response.sendRedirect("bookingsave.jsp");  
+}else{  
+	response.sendRedirect("bookingerror.jsp");  
+}  
+%>  

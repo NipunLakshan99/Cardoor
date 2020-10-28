@@ -1,0 +1,16 @@
+package com.vehicle;
+
+public class booking {
+
+	public static void main(String[] args) {
+		private int id;  
+		private String pickupdate;
+		private String returndate;
+		private String vehiclemodel;
+		private String submodel;
+		public booking(int id,String pickupdate,String returndate,String vehiclemodel,String submodel) {
+			
+		}
+		
+	}
+}  

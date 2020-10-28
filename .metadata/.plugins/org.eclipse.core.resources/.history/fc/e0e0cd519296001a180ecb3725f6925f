@@ -1,0 +1,63 @@
+package com.javaClass;
+
+public class Agent {
+	
+	private int id;
+    private String name;
+	private String password;
+    private String email;
+    private String phonenumber;
+    private String Ratings;
+    
+    public Agent(int id, String name, String passU, String phonenumber, String ratings) {
+    }
+    
+    
+	 public int getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getPhonenumber() {
+		return phonenumber;
+	}
+
+	public String getRatings() {
+		return Ratings;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPhonenumber(String phonenumber) {
+		this.phonenumber = phonenumber;
+	}
+
+	public void setRatings(String ratings) {
+		Ratings = ratings;
+	}
+}

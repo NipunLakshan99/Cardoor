@@ -1,0 +1,68 @@
+package com.customer;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/feedback")
+public class feedback extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public feedback() {
+        super();
+       
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setContentType("text/html;charset=UTF-8");
+		String name=request.getParameter("customerName");
+		String status=request.getParameter("Satisfaction");
+		String description=request.getParameter("description");
+		PrintWriter out=response.getWriter();
+		
+		boolean isTrue;
+		
+		isTrue=CustomerDBUtil.insertfeedback(name, status, description);
+		
+		if(isTrue == true) {
+			RequestDispatcher dis = request.getRequestDispatcher("Please enter the required data");
+			dis.forward(request, response);
+		}
+		
+		else {
+			RequestDispatcher dis2 =request.getRequestDispatcher("Unable to connect to the database.");
+			dis2.forward(request, response);
+		}
+		
+		
+				else {
+					out.println("Unable to connect to the database.");
+				}
+				
+			}
+			else
+			{
+				out.println("Unable to connect to the database.");
+			}
+			
+		}
+		catch(Exception e) {
+			out.print("ALERT:    "+e);
+		}
+		
+		
+	}
+
+}

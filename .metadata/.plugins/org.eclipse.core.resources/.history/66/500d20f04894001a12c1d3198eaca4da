@@ -1,0 +1,79 @@
+package com.javaUtil.DB;
+
+import com.javaClass.feedback;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class feedbackDao {
+	
+	public feedbackDao() {
+		
+	}
+	
+	 public static Connection getConnection() {
+	        Connection con = null;
+
+	        try {
+	            Class.forName("com.mysql.jdbc.Driver");
+	            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/car", "root", "2226");
+	        } catch (Exception var2) {
+	            System.out.println(var2);
+	        }
+
+	        return con;
+	    }
+	 
+	 public static int save(feedback a) {
+		 int status = 0;
+		 
+		 try {
+			 Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("insert into feedback(name,status,description) values(?,?,?)");
+	            ps.setString(1, a.getName());
+	            ps.setString(2, a.getStatus());
+	            ps.setString(3, a.getDescription());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	        	
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+	 
+	 public static List<feedback> getAllrecords() {
+		 ArrayList<feedback> list = new ArrayList<feedback>();
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from feeback");
+	            ResultSet ra = ps.executeQuery();
+	            
+	            while(ra.next()) {
+	            	feedback f = new feedback();
+	            	f.setName(ra.getString("name"));
+	            	f.setStatus(ra.getString("status"));
+	            	f.setDescription(ra.getString("description"));
+	            	list.add(f);
+	            }
+	       
+	            
+	        } catch (Exception var5) {
+		            System.out.println(var5);
+		        }
+
+		        return list;
+	 }
+}
+	        
+	 
+
+	    
+
+	 
+
+

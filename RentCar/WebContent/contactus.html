@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Contact us</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="shortcut icon" href="CSS/favicon.ico" type="image/x-icon" />
+</head>
+
+<body onload="startTime()">
+<!--- Clock Display ------> 
+        <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                        h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i
+                }
+                ;  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+
+        <!------------------------------->
+
+        <div class="preloader bg-dark text-light" >
+            <div class="preloader-spinner" >
+
+
+                <div id="header-top" class="d-none d-xl-block">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="loader-content">
+                                <!--<img src="CSS/img/preloader.gif">-->
+                                <p id="txt"></p>
+
+                            </div>
+
+                            <div class="col-lg-3 text-left ">
+                                <i class="fas fa-map-marker-alt"></i> &nbsp;  Orex Shopping Complex, Ja-Ela
+                            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <div class="col-lg-3 text-center">
+                                <i class="fas fa-phone-volume"></i> 0112 249 249
+                            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <div class="col-lg-3 text-center">
+                                <i class="far fa-clock"></i> Mon-Fri 09.00 - 17.00
+                            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                            <div class="header-social-icons text-right">
+                                <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;
+                                <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;
+                                <a href="#"><i class="fab fa-facebook"></i></a>&nbsp;
+                                <a href="#"><i class="fab fa-youtube"></i></a>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="col-lg-4">
+                        <a href="Home.jsp" class="logo">
+                            <img src="CSS/img/logo.png" alt="JSOFT">
+                        </a>
+        </div>
+
+  		<div class="collapse navbar-collapse" id="navbarColor02">
+    	<ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <a href="Home.jsp" class="nav-link" href="#">HOME </a>
+      	</li>
+      	<li class="nav-item">
+        <a href="vehicles.jsp" class="nav-link" href="#">AVAILABLE VEHICLES</a>
+      	</li>
+      	<li class="nav-item">
+         <a href="booking.html" class="nav-link" href="#">BOOK A CAR</a>
+      	</li>
+      	<li class="nav-item">
+        <a href="contactus.html" class="nav-link" href="#">CONTACT US</a>
+      	</li>
+      	<li class="nav-item">
+        <a href="aboutus.jsp" class="nav-link" href="#">ABOUT US</a>
+      	</li>
+      	<li class="nav-item">
+        <a href="feedback.jsp" class="nav-link" href="#">FEEDBACK</a>
+      	</li>
+    	</ul>
+    	<li class="form-inline my-2 my-lg-0">
+        <a href="login.jsp" class="nav-item nav-link"><button class="btn btn-outline-warning">Login</button></a>
+    	</li>
+  		</div>
+		</nav>
+        <!-- Page Content -->
+        <div class="container">
+
+         <!-- Page Heading/Breadcrumbs -->
+         <div class="row">
+         <div class="col-lg-8">
+                    <br>
+                    <br>
+                    <br>
+
+
+                    <h1 class="page-header text-dark">Contact
+
+                        <small>CARDOOR | Sri Lanka</small>
+                    </h1>
+                    <br>
+
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Content Row -->
+            <div class="row">
+                <!-- Map Column -->
+                <div class="col-md-8">
+                    <!-- Embedded Google Map -->
+                    <div class="mapouter"><div class="gmap_canvas">" <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.4503450389511!2d79.90975029766561!3d7.102163598298295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f0853dceda47%3A0x4363a4806e81b06!2sVasi%20Quick%20Cabs%20%26%20Tours!5e0!3m2!1sen!2slk!4v1588890518762!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+                </div>
+                <!-- Contact Details Column -->
+                <div class="col-md-4">
+                    <h3>Contact Details</h3>
+                    <p>We are always ready to serve you the best we can. Please leave a message, call our number or email us regarding any of our services inquiries.</p>
+                    <p><i class="fas fa-map-marker-alt"></i>
+                        <abbr title="Phone"></abbr>     : Orex City Shopping Complex, Ja-Ela </p>
+                    </p>
+                    <p><i class="fa fa-phone"></i> 
+                        <abbr title="Phone"></abbr>: 0112 249 249 </p>
+                    <p><i class="fa fa-envelope"></i> 
+                        <abbr title="Email"></abbr>: <a class="text-black" href="kandyshoepalace@gmail.com">CARDOOR@gmail.com</a>
+                    </p>
+                    <p><i class="fa fa-clock"></i> 
+                        <abbr title="Hours"></abbr>: Mon-Fri 09.00 - 17.00 </p>
+                    <ul class="list-unstyled list-inline list-social-icons">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f fa-2x bg-black"></i><span class="text-dark"></a> : CARDOOR.com | Sri Lanka  </span>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="#" class="btn btn-success " ><span data-toggle="modal"
+                                                                        data-target="#WebDev">Stay Connected With Us !</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+            <!-- Footer Bottom Start -->
+            <section id="adddriver" class="py-5" style=" background-color: #242422;">
+				<div class="footer-bottom-area">
+      			 	 <div class="container">
+      		     		 <div class="row">
+        	    		    <div class="col-lg-12 text-center">
+               				     <p style="color: #8a8a7c;">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Sri Lanka</p>
+                			</div>
+           		 		</div>
+        			 </div>
+   				</div>
+  			 </section>
+  
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+package com.javaUtil.DB;
+
+import com.javaClass.Agent;
+import com.javaClass.admin;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class AgentDao {
+	private static Connection con = null;
+	private static Statement stmt = null;
+	private static ResultSet rs = null;
+
+	
+	public static List<Agent> validate(String name,String password){
+		
+		ArrayList<admin> ad = new ArrayList<>();
+				
+		try {
+			con =DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql = "select * from  admin where username='"+userName+"' and password='"+password+"'";
+			rs = stmt.executeQuery(sql);
+			
+			if(rs.next()) {
+				int id = rs.getInt(1);
+				String name = rs.getString(2);
+				String email = rs.getString(3);
+				String phone = rs.getString(4);
+				String userU = rs.getString(5);
+				String passU = rs.getString(6);
+				
+				admin c = new admin(id,name,email,phone,userU,passU);
+				ad.add(c);			}
+			
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return ad;
+		
+	}
+	
+	 public AgentDao() {
+	    }
+
+	    public static Connection getConnection() {
+	        Connection con = null;
+
+	        try {
+	            Class.forName("com.mysql.jdbc.Driver");
+	            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/car", "root", "2226");
+	        } catch (Exception var2) {
+	            System.out.println(var2);
+	        }
+
+	        return con;
+	    }
+
+	    public static int save(Agent u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("insert into driver(name,password,email,phonenumber,ratings) values(?,?,?,?,?)");
+	            ps.setString(1, u.getName());
+	            ps.setString(2, u.getPassword());
+	            ps.setString(3, u.getEmail());
+	            ps.setString(4, u.getPhonenumber());
+	            ps.setString(5, u.getRatings());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static int update(Agent u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("update driver set name=?,password=?,email=?,phonenumber=?,ratings=? where id=?");
+	            ps.setString(1, u.getName());
+	            ps.setString(2, u.getPassword());
+	            ps.setString(3, u.getEmail());
+	            ps.setString(4, u.getPhonenumber());
+	            ps.setString(5, u.getRatings());
+	            ps.setInt(6, u.getId());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static int delete(Agent u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("delete from driver where id=?");
+	            ps.setInt(1, u.getId());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static List<Agent> getAllRecords() {
+	        ArrayList<Agent> list = new ArrayList<Agent>();
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from driver");
+	            ResultSet rs = ps.executeQuery();
+
+	            while(rs.next()) {
+	                Agent u = new Agent();
+	                u.setId(rs.getInt("id"));
+	                u.setName(rs.getString("name"));
+	                u.setPassword(rs.getString("password"));
+	                u.setEmail(rs.getString("email"));
+	                u.setPhonenumber(rs.getString("phonenumber"));
+	                u.setRatings(rs.getString("ratings"));
+	                list.add(u);
+	            }
+	        } catch (Exception var5) {
+	            System.out.println(var5);
+	        }
+
+	        return list;
+	    }
+
+	    public static Agent getRecordById(int id) {
+	        Agent u = null;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from driver where id=?");
+	            ps.setInt(1, id);
+	            ResultSet rs = ps.executeQuery();
+
+	            while(rs.next()) {
+	                u = new Agent();
+	                u.setId(rs.getInt("id"));
+	                u.setName(rs.getString("name"));
+	                u.setPassword(rs.getString("password"));
+	                u.setEmail(rs.getString("email"));
+	                u.setPhonenumber(rs.getString("phonenumber"));
+	                u.setRatings(rs.getString("ratings"));
+	            }
+	        } catch (Exception var5) {
+	            System.out.println(var5);
+	        }
+
+	        return u;
+	    }
+
+	
+}
+

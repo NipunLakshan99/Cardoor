@@ -1,0 +1,227 @@
+
+Apr 26, 2020 12:09:17.62 NEW SESSION
+Apr 26, 2020 12:09:17.62 [9340:12664:0426/120917.620:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 12:09:23.43 [9340:4872:0426/120923.431:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:17:59.31 [12360:12628:0426/121759.309:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 12:18:04.27 [12360:10732:0426/121804.275:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:18:32.75 [12360:10732:0426/121832.759:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:19:22.96 [12360:10732:0426/121922.960:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:21:06.02 [15408:8416:0426/122106.020:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 12:21:17.56 [15408:5368:0426/122117.564:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:21:41.54 [15408:5368:0426/122141.541:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:22:38.70 [15408:5368:0426/122238.705:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:24:20.10 [15408:5368:0426/122420.108:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:26:02.42 [15104:2712:0426/122602.420:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 12:26:11.27 [15104:11732:0426/122611.272:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:26:37.75 [15104:11732:0426/122637.756:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:27:30.10 [15104:11732:0426/122730.109:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 12:31:29.13 [4804:3676:0426/123129.132:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 21:51:50.98 [10884:13620:0426/215150.982:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 21:51:55.01 [10884:8468:0426/215155.016:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 21:53:10.09 [5044:4968:0426/215310.093:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 21:53:15.82 [5044:12780:0426/215315.819:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 21:53:57.50 [6260:3264:0426/215357.508:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 21:54:16.25 [12064:16324:0426/215416.254:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 21:54:19.34 [12064:11260:0426/215419.344:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 26, 2020 22:13:13.89 [1740:2124:0426/221313.899:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 26, 2020 22:15:00.79 [13584:14404:0426/221500.795:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+Apr 29, 2020 22:12:50.30 NEW SESSION
+Apr 29, 2020 22:12:50.30 [4208:15128:0429/221250.300:ERROR:browser_switcher_service.cc(238)] XXX Init()
+Apr 29, 2020 22:13:02.80 [4208:11132:0429/221302.806:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 29, 2020 22:13:30.32 [4208:11132:0429/221330.325:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 29, 2020 22:14:15.19 [4208:11132:0429/221415.197:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 29, 2020 22:16:04.24 [4208:11132:0429/221604.248:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+Apr 29, 2020 22:19:32.98 [4208:11132:0429/221932.985:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+May 02, 2020 19:20:08.41 NEW SESSION
+May 02, 2020 19:20:08.41 [8516:408:0502/192008.414:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 02, 2020 19:20:15.38 [8516:10092:0502/192015.388:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 02, 2020 19:20:37.59 [8516:10092:0502/192037.597:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 02, 2020 19:21:30.48 [8516:10092:0502/192130.482:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 02, 2020 19:23:30.24 [8516:10092:0502/192330.244:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 02, 2020 19:26:14.48 [8516:10092:0502/192614.486:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 02, 2020 19:32:09.72 [8516:10092:0502/193209.726:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 02, 2020 19:42:09.72 [8516:10092:0502/194209.729:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+May 04, 2020 13:14:58.88 NEW SESSION
+May 04, 2020 13:14:58.88 [7400:1780:0504/131458.879:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 04, 2020 19:00:48.19 [11608:4368:0504/190048.198:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 04, 2020 19:00:52.86 [11608:10432:0504/190052.867:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 04, 2020 19:22:44.70 [1272:12320:0504/192244.709:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 07, 2020 01:27:43.82 NEW SESSION
+May 07, 2020 01:27:43.82 [13648:8676:0507/012743.773:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 01:28:58.94 [2592:13464:0507/012858.941:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 01:32:31.12 [7344:14660:0507/013231.122:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 01:41:37.88 [7856:8592:0507/014137.884:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 02:07:03.51 [12640:5532:0507/020703.514:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 12:24:30.95 [2732:1704:0507/122430.950:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 13:07:23.11 [2732:8256:0507/130723.112:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 13:07:51.25 [2732:8256:0507/130751.251:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 13:08:44.31 [2732:8256:0507/130844.319:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 13:10:33.60 [2732:8256:0507/131033.609:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 13:14:20.42 [2732:8256:0507/131420.421:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 13:21:13.15 [2732:8256:0507/132113.157:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 14:07:55.10 [2732:8256:0507/140755.099:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 14:08:21.37 [2732:8256:0507/140821.371:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:16:34.10 [2732:8256:0507/171634.101:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:16:58.81 [2732:8256:0507/171658.817:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:17:52.87 [2732:8256:0507/171752.878:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:19:44.95 [2732:8256:0507/171944.950:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:23:05.85 [2732:8256:0507/172305.857:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:29:31.81 [2732:8256:0507/172931.812:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:39:31.81 [2732:8256:0507/173931.814:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:49:31.81 [2732:8256:0507/174931.817:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 17:59:31.82 [2732:8256:0507/175931.820:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 18:09:31.82 [2732:8256:0507/180931.823:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 18:19:31.82 [2732:8256:0507/181931.825:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 18:29:31.82 [2732:8256:0507/182931.828:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 18:39:31.83 [2732:8256:0507/183931.831:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 18:49:31.83 [2732:8256:0507/184931.834:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 18:59:31.83 [2732:8256:0507/185931.836:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 19:01:57.90 [2732:8256:0507/190157.908:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 19:02:47.01 [7076:7344:0507/190247.016:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 19:03:00.39 [7076:14560:0507/190300.394:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 19:03:26.93 [9892:10332:0507/190326.935:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 07, 2020 19:03:39.79 [9892:10944:0507/190339.794:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 07, 2020 19:04:08.98 [9892:10944:0507/190408.981:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 08, 2020 22:01:50.16 [10500:8076:0508/220150.169:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 08, 2020 22:01:54.34 [10500:10660:0508/220154.347:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 08, 2020 22:02:22.14 [10500:10660:0508/220222.148:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 08, 2020 22:03:14.23 [10500:10660:0508/220314.231:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 08, 2020 22:04:42.00 [10500:10660:0508/220442.004:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 08, 2020 23:37:53.17 [16024:2108:0508/233753.176:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 08, 2020 23:51:23.50 [14496:11948:0508/235123.500:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 08, 2020 23:51:38.16 [7636:3552:0508/235138.169:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 08, 2020 23:51:55.15 [16676:1136:0508/235155.158:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 08, 2020 23:52:20.55 [3276:2072:0508/235220.552:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 08, 2020 23:53:22.34 [3032:7380:0508/235322.343:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 24:26:02.48 [5532:10312:0509/002602.487:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 24:58:25.36 [5532:9308:0509/005825.367:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 09, 2020 03:30:25.25 [17116:5960:0509/033025.252:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 03:32:45.11 [10876:1908:0509/033245.112:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 09, 2020 13:23:26.36 NEW SESSION
+May 09, 2020 13:23:26.36 [12032:14840:0509/132326.358:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 13:23:40.20 [12032:6824:0509/132340.200:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 14:23:23.87 [9052:15028:0509/142323.877:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 14:24:23.35 [15568:6528:0509/142423.358:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 20:37:43.87 [14712:1432:0509/203743.879:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 20:40:56.58 [8284:11484:0509/204056.584:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 09, 2020 20:59:08.39 [8284:3148:0509/205908.395:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 09, 2020 21:06:38.06 [8284:3148:0509/210638.067:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:07:07.09 [8284:3148:0509/210707.090:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:08:01.16 [8284:3148:0509/210801.167:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:09:55.25 [8284:3148:0509/210955.259:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:12:39.99 [8284:3148:0509/211239.996:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:20:06.65 [8284:3148:0509/212006.655:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:30:06.65 [8284:3148:0509/213006.658:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:40:06.66 [8284:3148:0509/214006.661:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 21:50:06.66 [8284:3148:0509/215006.664:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 23:44:41.64 [8284:3148:0509/234441.640:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 23:45:03.49 [8284:3148:0509/234503.497:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 23:45:54.46 [8284:3148:0509/234554.466:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 23:47:41.78 [8284:3148:0509/234741.780:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 23:51:01.01 [8284:3148:0509/235101.011:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 09, 2020 23:58:41.83 [8284:3148:0509/235841.834:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 24:08:41.83 [8284:3148:0510/000841.837:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 24:18:41.84 [8284:3148:0510/001841.840:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 24:28:41.84 [8284:3148:0510/002841.843:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 24:38:41.84 [8284:3148:0510/003841.846:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 24:48:41.84 [8284:3148:0510/004841.848:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 24:58:41.85 [8284:3148:0510/005841.851:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 01:08:41.85 [8284:3148:0510/010841.854:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 01:17:12.68 [8284:11484:0510/011712.689:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:17:13.00 [8284:11484:0510/011713.000:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:17:13.10 [8284:11484:0510/011713.108:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:17:13.40 [8284:11484:0510/011713.401:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:17:13.54 [8284:11484:0510/011713.546:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:17:13.87 [8284:11484:0510/011713.871:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:17:14.08 [8284:11484:0510/011714.087:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+May 10, 2020 01:18:41.85 [8284:3148:0510/011841.857:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 01:28:41.86 [8284:3148:0510/012841.860:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 01:38:41.86 [8284:3148:0510/013841.862:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 01:48:41.86 [8284:3148:0510/014841.864:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 01:58:41.86 [8284:3148:0510/015841.865:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 02:02:03.80 [4172:700:0510/020203.799:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 10, 2020 02:02:08.35 [4172:15036:0510/020208.357:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 02:02:32.62 [4172:15036:0510/020232.628:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 10, 2020 02:03:14.65 [4172:15036:0510/020314.652:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+May 10, 2020 17:20:15.65 NEW SESSION
+May 10, 2020 17:20:15.65 [11764:16596:0510/172015.648:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 10, 2020 17:29:39.43 NEW SESSION
+May 10, 2020 17:29:39.43 [3120:11336:0510/172939.429:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 11, 2020 11:10:38.33 NEW SESSION
+May 11, 2020 11:10:38.33 [17860:3316:0511/111038.333:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 11:16:59.75 [17560:9672:0511/111659.754:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 11, 2020 18:24:50.29 NEW SESSION
+May 11, 2020 18:24:50.29 [9180:7384:0511/182450.295:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 19:01:43.23 [9180:3784:0511/190143.239:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 11, 2020 19:03:00.34 [9180:3784:0511/190300.342:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 11, 2020 19:03:00.68 [9180:3784:0511/190300.686:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+May 11, 2020 20:36:21.34 [6732:5444:0511/203621.349:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 11, 2020 21:04:28.58 NEW SESSION
+May 11, 2020 21:04:28.58 [1344:10752:0511/210428.577:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 22:33:13.58 [8880:2080:0511/223313.589:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 11, 2020 22:33:17.83 [8880:8524:0511/223317.834:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 11, 2020 22:33:43.20 [8880:8524:0511/223343.207:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 12, 2020 24:36:58.46 [9996:10132:0512/003658.465:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 24:46:23.05 [2004:3260:0512/004623.054:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 01:00:56.48 [9828:10244:0512/010056.488:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 01:11:11.76 [10612:11696:0512/011111.766:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 01:15:13.12 [1960:9800:0512/011513.127:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 17:55:01.68 [4284:11912:0512/175501.681:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 18:13:51.46 [11948:12084:0512/181351.461:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 12, 2020 18:59:35.72 [11948:7972:0512/185935.722:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 13, 2020 24:35:47.84 [11036:7928:0513/003547.845:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 13, 2020 24:59:03.02 NEW SESSION
+May 13, 2020 24:59:03.02 [12040:10612:0513/005903.020:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 13, 2020 16:49:11.49 NEW SESSION
+May 13, 2020 16:49:11.49 [5012:2368:0513/164911.422:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 13, 2020 18:59:46.87 [10136:5716:0513/185946.877:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 13, 2020 19:00:07.64 [2988:9412:0513/190007.644:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 13, 2020 19:09:11.53 [7720:4720:0513/190911.537:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 14, 2020 24:59:50.77 [7720:11616:0514/005950.774:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 14, 2020 05:26:41.65 [6032:3880:0514/052641.657:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 14, 2020 23:38:47.43 NEW SESSION
+May 14, 2020 23:38:47.43 [11164:2672:0514/233847.431:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 14, 2020 23:57:35.23 [6064:1860:0514/235735.232:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 24:31:52.61 [11416:12276:0515/003152.619:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 24:35:29.69 [11576:8924:0515/003529.699:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 24:44:05.72 [2780:3652:0515/004405.728:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 15, 2020 12:55:10.35 NEW SESSION
+May 15, 2020 12:55:10.35 [1524:1080:0515/125510.349:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 12:57:09.53 [9732:4072:0515/125709.537:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 12:57:42.38 [11632:9396:0515/125742.384:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 12:59:51.31 [7396:9808:0515/125951.312:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:01:31.86 [312:8788:0515/130131.865:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:03:32.48 [11424:9924:0515/130332.481:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:06:14.86 [6820:12124:0515/130614.867:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:06:42.59 [8212:5584:0515/130642.594:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:09:10.02 [7144:4452:0515/130910.023:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:11:29.10 [6300:9804:0515/131129.102:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 13:11:43.97 [11832:4604:0515/131143.977:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+May 15, 2020 14:09:13.91 NEW SESSION
+May 15, 2020 14:09:13.91 [6412:3220:0515/140913.912:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 16:34:07.12 [6412:2004:0515/163407.124:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 15, 2020 16:34:32.06 [6412:2004:0515/163432.068:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 15, 2020 16:35:24.49 [6412:2004:0515/163524.493:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 15, 2020 16:37:11.08 [6412:2004:0515/163711.089:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 15, 2020 16:40:42.25 [6412:2004:0515/164042.257:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+May 15, 2020 16:41:22.60 [6412:2004:0515/164122.609:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105
+
+May 15, 2020 20:50:23.17 NEW SESSION
+May 15, 2020 20:50:23.17 [1100:10460:0515/205023.176:ERROR:browser_switcher_service.cc(238)] XXX Init()
+May 15, 2020 21:22:31.87 [1100:8864:0515/212231.878:ERROR:socket_stream.cc(218)] Closing stream with result -2
+May 15, 2020 21:24:16.11 [1100:8864:0515/212416.111:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -105

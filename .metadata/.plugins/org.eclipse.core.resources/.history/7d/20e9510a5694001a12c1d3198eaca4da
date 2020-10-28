@@ -1,0 +1,124 @@
+package com.javaUtil.DB;
+
+import com.javaClass.feedback;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class feedbackDao {
+	
+	 public feedbackDao() {
+	    }
+
+	    public static Connection getConnection() {
+	        Connection con = null;
+
+	        try {
+	            Class.forName("com.mysql.jdbc.Driver");
+	            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/car", "root", "2226");
+	        } catch (Exception var2) {
+	            System.out.println(var2);
+	        }
+
+	        return con;
+	    }
+
+	    public static int save(feedback u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("insert into feedback(name,status,description) values(?,?,?)");
+	            ps.setString(1, u.getName());
+	            ps.setString(2, u.getStatus());
+	            ps.setString(3, u.getDescription());
+	            status = ps.executeUpdate();
+	            
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static int update(feedback u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("update feedback set name=?,status=?,description=?");
+	            ps.setString(1, u.getName());
+	            ps.setString(2, u.getStatus());
+	            ps.setString(3, u.getDescription());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static int delete(feedback u) {
+	        int status = 0;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("delete from driver where Name=?");
+	            ps.setString(1, u.getName());
+	            status = ps.executeUpdate();
+	        } catch (Exception var4) {
+	            System.out.println(var4);
+	        }
+
+	        return status;
+	    }
+
+	    public static List<feedback> getAllRecords() {
+	        ArrayList<feedback> list = new ArrayList<feedback>();
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from feedback");
+	            ResultSet rs = ps.executeQuery();
+
+	            while(rs.next()) {
+	                feedback u = new feedback();
+	                u.setName(rs.getString("name"));
+	                u.setStatus(rs.getString("status"));
+	                u.setDescription(rs.getString("description"));
+	                list.add(u);
+	            }
+	        } catch (Exception var5) {
+	            System.out.println(var5);
+	        }
+
+	        return list;
+	    }
+
+	    public static feedback getRecordById(String name) {
+	        feedback u = null;
+
+	        try {
+	            Connection con = getConnection();
+	            PreparedStatement ps = con.prepareStatement("select * from feedback where name=?");
+	            ps.setString(1, name);
+	            ResultSet rs = ps.executeQuery();
+
+	            while(rs.next()) {
+	                u = new feedback();
+	                u.setName(rs.getString("name"));
+	                u.setStatus(rs.getString("status"));
+	                u.setDescription(rs.getString("description"));
+	            }
+	        } catch (Exception var5) {
+	            System.out.println(var5);
+	        }
+
+	        return u;
+	    }
+}
+

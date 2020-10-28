@@ -1,0 +1,41 @@
+package com.vehicle;
+
+public class booking {
+
+	public static void main(String[] args) {
+		private int id;  
+		private String pickupdate,returndate,vehiclemodel,submodel;  
+		//generate getters and setters  
+		public int getId() {
+			return id;
+		}
+		public void setId(int id) {
+			this.id = id;
+		}
+		public String getPickupdate() {
+			return pickupdate;
+		}
+		public void setPickupdate(String pickupdate) {
+			this.pickupdate = pickupdate;
+		}
+		public String getReturndate() {
+			return returndate;
+		}
+		public void setReturndate(String returndate) {
+			this.returndate = returndate;
+		}
+		public String getVehiclemodel() {
+			return vehiclemodel;
+		}
+		public void setVehiclemodel(String vehiclemodel) {
+			this.vehiclemodel = vehiclemodel;
+		}
+		public String getSubmodel() {
+			return submodel;
+		}
+		public void setSubmodel(String submodel) {
+			this.submodel = submodel;
+		}
+		
+	}
+}  

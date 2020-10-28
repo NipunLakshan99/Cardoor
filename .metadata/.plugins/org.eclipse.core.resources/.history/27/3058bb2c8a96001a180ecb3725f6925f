@@ -1,0 +1,77 @@
+package com.javaUtil.DB;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.javaClass.admin;
+
+public class AdminDao {
+	private static Connection con = null;
+	private static Statement stmt = null;
+	private static ResultSet rs = null;
+	
+	public static List<admin> validate(String userName,String password){
+		
+		ArrayList<admin> ad = new ArrayList<>();
+				
+		try {
+			con =DBConnect.getConnection();
+			stmt = con.createStatement();
+			String sql = "select * from  admin where username='"+userName+"' and password='"+password+"'";
+			rs = stmt.executeQuery(sql);
+			
+			if(rs.next()) {
+				int id = rs.getInt(1);
+				String name = rs.getString(2);
+				String email = rs.getString(3);
+				String phone = rs.getString(4);
+				String userU = rs.getString(5);
+				String passU = rs.getString(6);
+				
+				admin c = new admin(id,name,email,phone,userU,passU);
+				ad.add(c);			}
+			
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return ad;
+		
+	}
+	
+	public static boolean insertadmin (String name, String email, String phone, String username, String password) {
+		
+		boolean isSuccess = false;
+			
+				try {
+					
+					con = DBConnect.getConnection();
+					stmt = con.createStatement();
+					String sql = "insert into admin values(0,'"+name+"', '"+email+"','"+phone+"','"+username+"','"+password+"')";
+					int rs = stmt.executeUpdate(sql);
+					
+					if(rs > 0) {
+						isSuccess = true;
+					}
+					else {
+						isSuccess = false;
+					}
+					
+					
+				}
+				catch(Exception e) {
+					e.printStackTrace();
+				}
+		
+		
+		
+		return isSuccess;
+	}
+
+}
+
+}

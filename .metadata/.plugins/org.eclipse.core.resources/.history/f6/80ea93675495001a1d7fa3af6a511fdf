@@ -1,0 +1,7 @@
+<%@page import="com.javaUtil.DB.DriverDao"%>  
+<jsp:useBean id="u" class="com.javaClass.Agent"></jsp:useBean>  
+<jsp:setProperty property="*" name="u"/>  
+<%  
+		DriverDao.delete(u);  
+		response.sendRedirect("viewdrivers.jsp");  
+%>  
